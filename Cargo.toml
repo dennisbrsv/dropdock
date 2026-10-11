@@ -1,0 +1,21 @@
+[package]
+name = "dropdock"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.98"
+license = "MIT"
+description = "A native Rust desktop application installer and manager"
+repository = "https://github.com/dennisbrsv/dropdock"
+
+[dependencies]
+eframe = { version = "=0.31.1", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+rfd = "0.15"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+walkdir = "2"
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[profile.release]
+opt-level = 2
+strip = true

@@ -1,0 +1,12 @@
+/target/
+/dropdock
+/dropdock.new
+/preview.png
+/library-preview.png
+.env
+.env.*
+*.pem
+*.key
+*.log
+*.zip
+.DS_Store

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Dropdock
+Comment=Drop packages, install applications, and manage your app library
+Exec=dropdock %F
+Icon=io.dropdock.App
+Terminal=false
+Categories=Settings;PackageManager;
+StartupNotify=true
+StartupWMClass=io.dropdock.App
+MimeType=application/vnd.debian.binary-package;application/x-rpm;application/vnd.flatpak.ref;application/vnd.flatpak;

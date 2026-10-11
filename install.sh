@@ -47,7 +47,7 @@ for candidate in "$id" $like; do
 done
 printf 'Detected: %s (%s)\n' "$id" "$family"
 case "$family" in
-    arch) deps=(pacman -S --needed base-devel pkgconf libx11 libxcursor libxi libxrandr libxkbcommon wayland mesa flatpak konsole polkit xdg-utils librsvg) ;;
+    arch) deps=(pacman -S --needed base-devel pkgconf libx11 libxcursor libxi libxrandr libxkbcommon wayland mesa flatpak konsole polkit xdg-utils librsvg curl ca-certificates) ;;
     debian) deps=(apt-get install build-essential pkg-config libx11-dev libxcursor-dev libxi-dev libxrandr-dev libxkbcommon-dev libwayland-dev libgl1-mesa-dev flatpak konsole pkexec xdg-utils librsvg2-bin ca-certificates curl) ;;
     fedora) deps=(dnf install gcc gcc-c++ make pkgconf-pkg-config libX11-devel libXcursor-devel libXi-devel libXrandr-devel libxkbcommon-devel wayland-devel mesa-libGL-devel flatpak konsole polkit xdg-utils librsvg2-tools curl) ;;
     suse) deps=(zypper install gcc gcc-c++ make pkg-config libX11-devel libXcursor-devel libXi-devel libXrandr-devel libxkbcommon-devel wayland-devel Mesa-libGL-devel flatpak konsole polkit xdg-utils rsvg-convert curl) ;;
